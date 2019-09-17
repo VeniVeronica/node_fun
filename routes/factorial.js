@@ -1,7 +1,7 @@
 'use strict';
 var express = require('express');
 var app = express.Router();
-var factFunction = require('../index')
+var factFunction = require('../controller/factorial')
 
 app.get('/factorial/:number', function(req, res){
      var n = req.params.number;
@@ -14,5 +14,6 @@ app.get('/factorial/:number', function(req, res){
 
 
 module.exports = app;
+
 
 
